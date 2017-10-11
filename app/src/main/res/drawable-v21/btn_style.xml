@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- UNSELECTED -->
+    <item style="?android:attr/borderlessButtonStyle">
+        <!--<shape>
+            <stroke android:width="1dp" android:color="#c4cbd2" />
+            <corners android:radius="15dp" />
+            <solid android:color="#fff" />
+        </shape>-->
+    </item>
+
+    <!-- SELECTED -->
+    <!--  <item android:state_focused="true">
+        <layer-list>
+              &lt;!&ndash; 배경 &ndash;&gt;
+              <item>
+                  <shape>
+                      <stroke android:width="1dp" android:color="#c4cbd2" />
+                      <corners android:radius="8dp" />
+                      <size android:width="20dp" android:height="8dp" />
+                      <solid android:color="#fff" />
+                  </shape>
+              </item>
+          </layer-list>
+    </item>-->
+
+    <!-- SELECTED -->
+    <item android:drawable="@drawable/rounded" android:state_pressed="true">
+
+    </item>
+</selector>
+
+

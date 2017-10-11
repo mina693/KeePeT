@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "951070845064",
+    "project_id": "firebase-keepet"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951070845064:android:e135484b8d126acd",
+        "android_client_info": {
+          "package_name": "com.example.b10715.final_pj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8CyyvTe4NWE8CM6FGwaiaFsDGnnvaZKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

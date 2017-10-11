@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/petsitter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_pet_sitter_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.b10715.final_pj.PetSitterEditActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 펫시터 이미지 -->
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_pet_sitter"
+                        android:layout_width="125.0dip"
+                        android:layout_height="125.0dip"
+                        android:src="@drawable/ic_action_user"
+                        app:border_color="#FF000000" />
+
+                    <Button
+                        android:id="@+id/btn_choose_image"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="52.0dip"
+                        android:layout_height="52.0dip"
+                        android:layout_gravity="bottom|center|right"
+                        android:layout_marginBottom="2.0dip"
+                        android:background="@drawable/input_circle"
+                        android:elevation="2.0dip"
+                        android:onClick="OnClick"
+                        android:src="@drawable/ic_progress_img" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- 펫시터 이름 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="이름" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 나이 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="나이" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_age_1"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="10대" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_age_2"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="20대" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_age_3"
+                            android:layout_width="55dp"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="30대" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_age_4"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="40대" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_age_5"
+                            android:layout_width="55dp"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="50대" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 성별 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:text="성별" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_woman"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:onClick="OnClick"
+                            android:text="여자" />
+
+                        <Button
+                            android:id="@+id/btn_sitter_man"
+                            android:layout_width="wrap_content"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_height="wrap_content"
+                            android:onClick="OnClick"
+                            android:text="남자" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 전화번호 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="전화번호" />
+
+                        <Spinner
+                            android:id="@+id/spn_sitter_phone_1"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_phone_2"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="phone"
+                            android:maxLength="4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_phone_3"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="phone"
+                            android:maxLength="4" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 지역 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_adr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="지역" />
+
+                        <Spinner
+                            android:id="@+id/spn_sitter_adr"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 양육 경력 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_career"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:text="펫 양육 경력" />
+
+
+                        <EditText
+                            android:id="@+id/edit_sitter_year"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="date"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="년" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_month"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="date"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="개월" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 반려동물 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_pet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="현재 양육중인 반려동물" />
+
+                        <Spinner
+                            android:id="@+id/spn_sitter_pet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp" />
+
+                        <Spinner
+                            android:id="@+id/spn_sitter_pet_breed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 시간 당 가격 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:text="펫시팅 비용" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_price"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원 / 시간" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 한마디 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:text="한마디" />
+
+                        <EditText
+                            android:id="@+id/edit_sitter_word"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textLongMessage" />
+
+                    </LinearLayout>
+
+                    <!-- 펫시터 예약된 펫 시팅 -->
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_sitter_regist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이번달 예약된 펫 시팅" />
+
+                        <com.squareup.timessquare.CalendarPickerView
+                            android:id="@+id/calendar_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:clipToPadding="false"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:scrollbarStyle="outsideOverlay" />
+
+                        <!-- 등록/수정하기 버튼 -->
+                        <Button
+                            android:id="@+id/btn_register"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@xml/btn_border"
+                            android:onClick="OnClick"
+                            android:text="등록하기" />
+
+                        <Button
+                            android:id="@+id/btn_edit"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@xml/btn_border"
+                            android:onClick="OnClick"
+                            android:text="수정하기"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

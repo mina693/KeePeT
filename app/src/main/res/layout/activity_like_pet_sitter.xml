@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_like_pet_sitter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.b10715.final_pj.LikePetSitterActivity">
+
+    <!-- 펫시터 예약된 펫 시팅 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_sitter_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이번달 예약된 펫 시팅" />
+
+        <CalendarView
+            android:id="@+id/sitter_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:focusedMonthDateColor="#ff0000"
+                android:maxDate="12/31/2017"
+                android:minDate="05/1/2017"
+                android:selectedWeekBackgroundColor="#ffff00"
+                android:showWeekNumber="false"
+                android:unfocusedMonthDateColor="#0000ff"
+                android:weekSeparatorLineColor="#00ff00" />
+        </CalendarView>
+
+    </LinearLayout>
+
+</RelativeLayout>

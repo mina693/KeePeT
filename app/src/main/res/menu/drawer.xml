@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="@string/app_name" />
+        <item
+            android:id="@+id/nav_cam"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/nav_cam" />
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@drawable/ic_place"
+            android:title="@string/nav_gps" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/nav_user" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="SETTING" />
+
+    </group>
+    
+
+    <item android:title="펫시터 찾기">
+        <menu>
+            <item
+                android:id="@+id/nav_petsitter"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="펫 시터" />
+            <item
+                android:id="@+id/nav_like_petsitter"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="관심 펫시터" />
+        </menu>
+    </item>
+
+</menu>

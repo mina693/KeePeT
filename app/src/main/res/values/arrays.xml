@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="pet_species">
+        <item>강아지</item>
+        <item>고양이</item>
+        <item>토끼</item>
+        <item>고슴도치</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="pet_breed_dog">
+        <item> </item>
+        <item>골든리트리버</item>
+        <item>닥스훈트</item>
+        <item>도베르만 핀셔</item>
+        <item>래브라도 레트리버</item>
+        <item>말티즈</item>
+        <item>미니어처 핀셔</item>
+        <item>보스턴 테리어</item>
+        <item>비숑 프리제</item>
+        <item>사모예드</item>
+        <item>샤페이</item>
+        <item>슈나우저</item>
+        <item>스피츠</item>
+        <item>시베리언 허스키</item>
+        <item>시추</item>
+        <item>비알래스칸 맬러뮤트</item>
+        <item>요크셔 테리어</item>
+        <item>웰쉬 코르기</item>
+        <item>잉글리시 코커 스패니얼</item>
+        <item>저먼 셰퍼드 도그</item>
+        <item>진도개</item>
+        <item>치와와</item>
+        <item>파피용</item>
+        <item>퍼그</item>
+        <item>페키니즈</item>
+        <item>포메라니안</item>
+        <item>푸들</item>
+        <item>프렌치 불도그</item>
+        <item>그레이하운드</item>
+        <item>꼬통 드 툴레아</item>
+        <item>네오폴리탄 마스티프</item>
+        <item>달마티안</item>
+        <item>도이치 브라케</item>
+        <item>딩고</item>
+        <item>러시안 스파니엘</item>
+        <item>러시안 하운드</item>
+        <item>레온베르거</item>
+        <item>랜드시어</item>
+        <item>르베스크</item>
+        <item>미니어처 불 테리어</item>
+        <item>보더 테리어</item>
+        <item>불 테리어</item>
+        <item>불도그</item>
+        <item>비글</item>
+        <item>차이니스 샤페이</item>
+        <item>혼합(Mixed)</item>
+        <item>알수없음</item>
+    </string-array>
+
+    <string-array name="pet_breed_cat">
+        <item>데본 렉스</item>
+        <item>랙돌</item>
+        <item>러시안 블루</item>
+        <item>샴</item>
+        <item>스코티쉬 폴드</item>
+        <item>스핑크스</item>
+        <item>옥시캣</item>
+        <item>터키쉬 앙고라</item>
+        <item>페르시안</item>
+        <item>혼합(Mixed)</item>
+        <item>히말라얀</item>
+        <item>나폴레옹</item>
+        <item>봄베이</item>
+        <item>자바니즈</item>
+        <item>킴릭</item>
+        <item>터키쉬 밴</item>
+        <item>통키니즈</item>
+        <item>티파니</item>
+        <item>하바나 브라운</item>
+        <item>먼치킨</item>
+        <item>메인 쿤</item>
+        <item>뱅갈</item>
+        <item>버마</item>
+        <item>아메리칸 밥테일</item>
+        <item>코니시 렉스</item>
+        <item>알수없음</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>펫관련</item>
+        <item>펫정보관리</item>
+        <item>회원정보관리</item>
+        <item>어플관련</item>
+    </string-array>
+
+    <string-array name="phone">
+        <item>010</item>
+        <item>011</item>
+        <item>017</item>
+        <item>019</item>
+    </string-array>
+
+    <string-array name="adr">
+        <item>서울시</item>
+        <item>경기도</item>
+        <item>인천시</item>
+        <item>부산시</item>
+        <item>대구시</item>
+        <item>대전시</item>
+        <item>울산시</item>
+        <item>광주시</item>
+        <item>경기도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>제주도</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>0~5000원</item>
+        <item>5000~8000원</item>
+        <item>8000~10000원</item>
+        <item>10000이상</item>
+        <item>낮은가격순 보기</item>
+        <item>높은가격순 보기</item>
+    </string-array>
+
+</resources>
